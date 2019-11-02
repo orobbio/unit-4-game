@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Skull Mystery</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Yeon+Sung&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif;    font-family: 'Yeon Sung', cursive; -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body background="./assets/images/spookylib.jpg">
+    <header>
+        <h1>Crystal Skull Collector!</h1>
+    </header>
+    <div id="points">
+        Wins: <span id="wins"></span>
+        Losses: <span id="losses"></span>
+    </div>
+    <div class="directions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four Skulls below. By clicking on a Skull
+            you will add a specific amount of points to your total score.</p>
+        <p>The value of each Skull is hidden from you until you click on it.</p>
+        <p>match the random number on the top to win the game! The Skulls are waiting!</p>
+    </div>
+    <br>
+    <div id="target-box" class="target-box">
+        <p id="target-number"></p>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <input type="image" id="skullA" class="skull" src="./assets/images/blue_granite _skull.jpg"
+                height="200px"></input>
+            <input type="image" id="skullB" class="skull" src="./assets/images/dragons_blood_skull.jpg"
+                height="200px"></input>
+            <input type="image" id="skullC" class="skull" src="./assets/images/rose_crystal_skull.jpg"
+                height="200px"></input>
+            <input type="image" id="skullD" class="skull" src="./assets/images/slate_crystal_skull.jpg"
+                height="200px"></input>
+        </div>
+    </div>
+    <div id="current-score" class="current-score">
+        <p id="active-score"></p>
+    </div>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
